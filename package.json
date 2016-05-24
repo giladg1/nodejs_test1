@@ -2,7 +2,7 @@
   "name": "nodejs_session_4",
   "version": "1.0.0",
   "description": "",
-  "main": "checkUrlModule.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,4 +11,5 @@
   "dependencies": {
     "validator": "^5.2.0"
   }
+
 }
