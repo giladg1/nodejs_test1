@@ -19,7 +19,7 @@ module.exports = {
         if (validator.isURL(someString)){
             console.log("Url valid");
             return {
-                url_final : ourURL.href ,
+                url: ourURL.href ,
                 host: ourURL.hostname,
                 port: ourURL.port || 80,
                 file: fileName,
@@ -30,7 +30,6 @@ module.exports = {
             console.log("Url not valid");
             return null
         }
-
 
 
     }
