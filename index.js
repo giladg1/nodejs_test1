@@ -10,11 +10,10 @@ module.exports = {
 
 
         var ourURL = url.parse(someString, true, false);
-        console.log(ourURL);
         var fileName = path.basename(ourURL.pathname);
-        console.log(fileName);
         var pathName = path.dirname(ourURL.pathname);
-        console.log(pathName);
+        pathName = pathName + "/";
+
 
         if (validator.isURL(someString)){
             console.log("Url valid");
