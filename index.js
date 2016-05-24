@@ -8,14 +8,13 @@ module.exports = {
         var path = require("path");
         var validator = require('validator');
 
-
-        var ourURL = url.parse(someString, true, false);
-        var fileName = path.basename(ourURL.pathname);
-        var pathName = path.dirname(ourURL.pathname);
-        pathName = pathName + "/";
-
-
         if (validator.isURL(someString)){
+
+            var ourURL = url.parse(someString, true, false);
+            var fileName = path.basename(ourURL.pathname);
+            var pathName = path.dirname(ourURL.pathname);
+            pathName = pathName + "/";
+
             console.log("Url valid");
             return {
                 url: ourURL.href ,
@@ -33,5 +32,3 @@ module.exports = {
     }
 
 };
-
-
